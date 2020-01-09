@@ -1,0 +1,307 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*{box-sizing: border-box;}
+
+.wrap {
+    width: 1024px;
+}
+
+.content-top {
+    background: #424242;
+    height: 160px;
+}
+
+.content-top-news  ul{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.img-fluid {
+    max-width: 80%;
+    height: auto;
+}
+
+.bmi-png > .bmi-png{
+    position:relative;
+    left:-20px;
+    border-right:20px solid transparent; /*透明边框*/
+ }
+.content-top-news .bmi-png {
+    
+    /* filter:drop-shadow(0 0 #FFD366);
+    background:url(BMICLogo.png) no-repeat center; */
+    background-size:contain;
+}
+
+.cmandkg {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cmandkg span {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    font-family:AppleSystemUIFont;
+    font-size: 18px;
+    color: #FFD366;
+    padding-bottom: 10px;
+}
+.cmandkg h2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cmandkg input{
+    background: rgba(255,255,255,0.18);
+    border: 2px solid #FFD366;
+    border-radius: 7px;
+    color: #FFD366;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: rgba(255, 255, 255, 0.18);
+    background-clip: padding-box;
+    border: 1px solid #FFD366;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  }
+
+.result{
+    padding-top: 10px;
+    position: relative;
+    width: 140px;
+}
+
+.result  button {
+    text-decoration:none;
+}
+
+.result #BMICount {
+    font-family:PingFangTC-Regular;
+    font-size: 24px;
+    color: #424242;
+    line-height:120px;
+    /* padding-left: 26px; */
+    background-color: #FFD366;
+    width:120px;
+    height:120px; 
+    /* 正圓形，所以寬與高都設一樣 */
+    border-radius:999em;
+}
+
+.d-none {
+    display: none !important;
+  }
+
+.m-0 {
+    margin: 0 !important;
+    /* position: absolute; */
+    top: 60px;
+    right: -88px;
+    width: 100px;
+  }
+.pl-2 {
+    /* padding-left: 8.5rem !important; */
+    position: absolute;
+    top: 60px;
+    right: -88px;
+    width: 100px;
+}
+.px-3 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+ 
+
+.result #BMIVary {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #FF1200;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+ #BMIVary small {
+    font-size: 6px;
+  }
+  
+#BMIVary .reset {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    border: 3px solid #424242;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons_loop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+#BMIVary .danger-Max {
+    background-color: #FF1200;
+  }
+  
+#BMIVary .danger-Serious {
+    background-color: #FF6C03;
+  }
+  
+#BMIVary .danger-Middle {
+    background-color: #FF6C03;
+  }
+  
+#BMIVary .danger-light {
+    background-color: #FF982D;
+  }
+  
+#BMIVary .Ideal {
+    background-color: #31BAF9;
+  }
+  
+#BMIVary .thick {
+    background-color: #86D73F;
+  }
+
+.content-bottom {
+    background-color: #F5F5F5;
+    min-height: 600px;
+}
+
+.content-bottom-title h3 {
+    font-family: SFNSDisplay;
+    font-size: 24px;
+    color: #424242;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+.footer {
+    background: #FFD366;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.footer img {
+    display:block;
+    margin:auto;
+}
+
+.content-bottom {
+    background-color: #F5F5F5;
+    min-height: 600px;
+  }
+  
+.content-bottom h2 {
+    font-size: 24px;
+  }
+  
+.content-bottom li {
+    color: #4A4A4A;
+    background-color: white;
+    padding: 1rem 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+ .content-bottom li p span.content {
+    font-size: 26px;
+    color: #424242;
+  }
+  
+.content-bottom li p span.recordDate {
+    font-size: 14px;
+    color: #4A4A4A;
+  }
+  
+.content-bottom li.danger-Max {
+    border-left: 7px solid #FF1200;
+  }
+  
+.content-bottom li.danger-Serious {
+    border-left: 7px solid #FF6C03;
+  }
+  
+.content-bottom li.danger-Middle {
+    border-left: 7px solid #FF6C03;
+  }
+  
+.content-bottom  li.danger-light {
+    border-left: 7px solid #FF982D;
+  }
+  
+.content-bottom li.Ideal {
+    border-left: 7px solid #31BAF9;
+  }
+  
+.content-bottom li.thick {
+    border-left: 7px solid #86D73F;
+  }
+  
+.content-bottom h6,
+.content-bottom p {
+    margin: 0;
+  }

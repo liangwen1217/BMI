@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="content-top">
+            <div class="content-top-news">
+                <ul>
+                    <li class="bmi-png">
+                        <img  calss="img-fluid"src="img/BMICLogo-titile.png" alt="">
+                    </li>
+                    <li class="cmandkg">
+                        <span>
+                            <h2>身高cm</h2>
+                            <input class="form-control" type="text" name="cm" id="userHeight" placeholder="請輸入身高">
+                        </span>
+                        <span>
+                            <h2>體重kg</h2>
+                            <input class="form-control" type="text" name="kg" id="userWeight" placeholder="請輸入體重">
+                        </span>
+                    </li>
+                    <li class="result">
+                        <button id="BMICount" class="btn bg-bmi-yellow">看結果</button>
+                        <div id="BMIVary" class="d-none"></div>
+                        <p id="showStatus" class="d-none m-0 pl-2" style="font-size: 32px"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-bottom">
+            <div class="content-bottom-title">
+                <h3>BMI 紀錄</h3>
+            </div>
+            <div class="content-bottom-news">
+                <ul id="userResult" class="p-0"></ul>
+                <!-- 插入js程式碼 -->
+            </div>
+            
+        </div>
+        <div class="footer">
+            <img src="img/BMICLogo.png" alt="">
+        </div>
+    </div>
+    <script src="js/all.js"></script>
+</body>
+</html>
